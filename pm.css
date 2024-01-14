@@ -826,6 +826,17 @@ border-radius: 50%;
       line-height: 55px;
     }
   }
+  @media (max-width: 880px){
+    .Info,.Info2{
+      height: 600vh;
+      width: 110vh;
+    }
+    .landing, .about{
+      width: 250vh;
+      height: 600vh;
+    }
+  
+}
   
   /* For screen widths up to 410px */
   
