@@ -1,0 +1,915 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+*{
+
+padding: 0;
+
+margin: 0;
+
+box-sizing: border-box;
+
+
+text-decoration: none;
+
+list-style: none;
+
+}
+
+:root{
+
+--bg-color: #222327;
+
+--text-color: #fff;
+
+--main-color: #29fd53;
+
+}
+
+
+body {
+height: 100%;
+width: 100%;
+background-color: black;
+}
+nav{
+color: #fff;
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: transparent;
+padding: 28px 12%;
+transition: all .50s ease;
+}
+.logo{
+
+display: flex;
+align-items: center;
+
+
+}
+
+
+.logo i{
+
+color: var(--main-color);
+font-size: 28px;
+margin-right: 3px;
+}
+
+.logo span{
+
+color: var(--text-color);
+font-size: 1.7rem; font-weight: 600;
+
+}
+.navbar{
+
+display: flex;
+
+}
+
+.navbar a{
+
+color: var(--text-color);
+font-size: 1.1rem;
+font-weight: 500;
+padding: 5px 0;
+margin: 0px 30px;
+transition: all .50s ease;
+
+}
+
+.navbar a:hover{
+color: var(--main-color);
+}  
+.navbar a.active{
+color: var(--main-color);
+}
+
+.main{
+display: flex;
+align-items: center;
+}
+
+.main a{
+
+margin-right: 25px;
+margin-left: 10px;
+color: var(--text-color);
+font-size: 1.1rem;
+
+font-weight: 500;
+
+transition: all .50s ease;
+
+}
+
+.user{
+
+display: flex;
+
+align-items: center;
+
+}
+
+.user i{
+
+color: var(--main-color);
+
+font-size: 28px;
+
+margin-right: 7px;
+
+}
+.main a:hover{
+
+color: var(--main-color);
+
+}
+
+#menu-icon{
+font-size:20p;
+color: var(--text-color);
+cursor: pointer;
+z-index: 10001;
+display:none;
+
+}
+
+
+
+
+
+.landing {
+background-image: url("1.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+height: 125vh;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+bottom: 4pc;
+}
+
+.text-container {
+text-align: center;
+}
+
+.Elite, .gaming {
+font-family: 'Black Ops One', sans-serif;
+color: white;
+}
+
+.Elite {
+font-size: 70px;
+position: relative;
+bottom: 10px;
+display: flex;
+}
+
+.gaming {
+font-size: 25px;
+position: relative;
+bottom: 45px;
+display: flex;
+margin-left: 70px;
+text-align: center;
+margin-top: 20px; 
+}
+.circle {
+    position: relative;
+    width: 60vh;
+    height: 60vh;
+    background: url('2.png');
+   background-size: cover;
+    border-radius: 50%;
+    animation: animate 0.5s linear infinite;
+    margin-left: 40px;
+}
+.circle.spin {
+    animation: animate 0.5s linear infinite;
+  }
+  
+  
+
+.circle:after {
+    content: '';
+    position: absolute;
+    top:20px;
+    right:20px;
+    bottom:20px;
+    left:20px;
+    border-radius: 50%;
+    background-image: url("2.png");
+    background-size: cover;
+    animation: rotateImage 0s linear infinite; /* Set duration to 0s for no rotation */
+    margin-bottom: 6px;
+}
+.circle img{
+    position: relative; bottom: 20px;
+}
+
+
+
+
+
+.circle span {
+
+position: absolute;
+
+width: 100%;
+
+height: 100%;
+
+background: linear-gradient(#33ccff,#ff0066);
+
+border-radius: 50%;
+
+}
+
+.circle span:nth-child(1) {
+    filter: blur(5px);
+
+} 
+
+.circle span:nth-child(2) { 
+    filter: blur(10px);
+
+}
+
+.circle span:nth-child(3) { 
+    filter: blur(20px);
+
+}
+
+.circle span:nth-child(4) { filter: blur(55px);
+
+}
+
+
+.about {
+    background-color: #000000;
+    width: 100%;
+    height: 125vh;
+    position: relative;
+    bottom: 5.5pc;
+    display: flex;
+    align-items: center; 
+    display: flex;
+}
+.text{
+    margin-left: 10pc;
+    position: relative;
+    bottom: 7pc;
+}
+
+
+
+
+.about{
+    color: white;
+    font-size: 2rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
+.text button {
+    margin-top: 10px;
+    background-color: #000000;
+    box-shadow: none;
+    border: #000000;
+    margin-right: 30pc;
+}
+.socials .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .socials .button:hover{
+    width: 200px;
+  }
+  .socials .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .socials .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .socials .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .socials .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .socials .button:nth-child(4):hover .icon{
+    background: #333;
+  }
+  .socials .button:nth-child(5):hover .icon{
+    background: #ff0000;
+  }
+  .socials .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .socials .button:hover .icon i{
+    color: #fff;
+  }
+  .socials .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .socials .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .socials .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .socials .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .socials .button:nth-child(4) span{
+    color: #333;
+  }
+  .socials .button:nth-child(5) span{
+    color: #ff0000;
+}
+.Info{
+    background-color: #000000;
+    width: 100%;
+    height: 125vh;
+    color: #fff;
+    
+}
+.Info2{
+    background-color: #000000;
+    width: 100%;
+    height: 125vh;
+    color: #fff;
+    position: relative;
+    bottom: 7pc;
+}
+.text2{
+    float: left;
+    margin-top: 5pc;
+    margin-right: 35pc;
+    margin-left: 1pc;
+}
+.Image{
+    float: right;
+    position: relative; bottom: 10pc;
+    margin-left: 20px;
+}
+.text1{
+    float: left;
+    margin-top: 15pc;
+    margin-right: 35pc;
+    margin-left: 3pc;
+}
+.Info{
+    position: relative;
+    bottom: 7pc;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .contact-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+
+  /* For screen widths up to 1280px */
+@media (max-width: 1280px) {
+    header {
+      padding: 14px 2%;
+      transition: 2s;
+    }
+  
+    .navbar a {
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
+  }
+  
+  @media  (max-width: 1080px) {
+   
+  }
+  
+  @media (max-width: 880px) {
+    
+    .navbar {
+        width: 270px;
+        height: auto;
+      }
+    
+      .landing {
+        width: 160vh; /* Set the width to match the other divs */
+        height: 250vh;
+      }
+    
+      #menu-icon {
+        display: block;
+      }
+    
+      body {
+        background-color: #000000;
+        margin-bottom: 0px;
+      }
+      .about{
+        width: 110vh; /* Set the width to match the other divs */
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        height: 250vh;
+      
+      }
+      .btn1{
+        width: 200px;
+      }
+      .text{
+        margin-top: 15pc;
+        font-size: 60px;
+      }
+      .btn1 img {
+        width: 400px; /* Change this value as per your requirement */
+      }
+      .form-control{
+        margin-left: 90vh;
+      }
+      .Info, .Info2{
+        display: flex;
+        flex-direction: column;       
+        width: 110vh;
+        height: 250vh;
+        margin: 0%;
+
+      }
+      .Image{
+        margin-top: 10pc;
+        height: 150px;
+       margin-left: 30vh;
+      }
+      .text1 {
+        font-size: 100px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5pc;
+        width: 90vh;
+
+      }
+      .text1 p{
+        font-size: 60px;
+        width: 90vh;
+      
+      }
+      .text2{
+        font-size: 100px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5pc;
+        width: 90vh;
+      }
+      .text2 p{
+        font-size: 60px;
+        width: 90vh;
+        
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20pc;
+        position: relative; bottom: 40pc;
+        width: 100%; /* Adjust as needed */
+        height: 150vh; 
+        font-size: 1.3rem; /* Adjust as needed */
+
+      }
+    
+      .form-group {
+        margin-bottom: 20px; /* Adjust as needed */
+      }
+      
+     
+      
+      .circle, .text{
+        margin-top: 30pc;
+      }
+     
+      
+      .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        font-size: 100px;
+      }
+    
+      .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        font-size: 1.3rem; /* Adjust as needed */
+
+      }
+    
+      .navbar a:hover {
+        color: var(--text-color);
+        transform: translateY(5px);
+      }
+    
+      .navbar a.active {
+        color: var(--text-color);
+      }
+    
+      .navbar.open {
+        right: 2%;
+      }
+    
+      .landing {
+        width: 120vh;
+      }
+  }
+  
+  /* For screen widths up to 569px */
+  @media screen and (max-width: 569px) {
+    .contact{
+      margin-top: 40pc;
+      width: 110vh;
+      font-size: 70pc;
+
+    }
+    .landing{
+      width: 160vh;
+    }
+    .about{
+      width: 160vh;
+      height: 150pc;
+    }
+    .socials{
+      width: 110vh;
+    }
+    .button{
+      width: 110vh;
+    }
+    .Info, .Info2{
+      width: 110vh;
+
+    }
+    .text1, .text2{
+      margin-left: 20pc;
+      width: 100vh;
+    }
+    h1{
+      font-size: 200px;
+    }
+    h2{
+      font-size: 100px;
+      margin-top: 50px;
+      position: relative; bottom: 2px;
+    }
+    .Info img{
+      margin-left: 10pc;
+    }
+
+
+    .direct-contact-container,
+    .form-socials {
+      float: none;
+      margin: 0 auto;
+    }
+  
+    .form-control,
+    textarea {
+      margin: 0 auto;
+    }
+  
+    .name,
+    .email,
+    textarea {
+      width: 280px;
+    }
+  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }
+  
+    .social-media-list {
+      left: 0;
+    }
+  
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+  
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+  }
+  
+  /* For screen widths up to 410px */
+  @media screen and (max-width: 410px) {
+    .contact{
+      margin-top: 40pc;
+      width: 110vh;
+      font-size: 70pc;
+
+    }
+    .landing{
+      width: 180vh;
+    }
+    .about{
+      width: 160vh;
+      height: 150pc;
+    }
+    .socials{
+      width: 110vh;
+    }
+    .button{
+      width: 110vh;
+    }
+    .Info, .Info2{
+      width: 110vh;
+      height: 250vh;
+      margin-top: 30pc;
+
+    }
+    .Info2{
+      background-color: #00000000;
+    }
+    .text1, .text2{
+      margin-left: 20pc;
+      width: 100vh;
+    }
+    h1{
+      font-size: 200px;
+    }
+    h2{
+      font-size: 100px;
+      margin-top: 50px;
+      position: relative; bottom: 2px;
+    }
+    .Info img{
+      margin-left: 10pc;
+    }
+
+
+    .direct-contact-container,
+    .form-socials {
+      float: none;
+      margin: 0 auto;
+    }
+  
+    .form-control,
+    textarea {
+      margin: 0 auto;
+    }
+  
+    .name,
+    .email,
+    textarea {
+      width: 280px;
+    }
+  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }
+  
+    .social-media-list {
+      left: 0;
+    }
+  
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+  
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+  }
