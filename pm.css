@@ -212,7 +212,7 @@ margin-top: 20px;
     border-radius: 50%;
     background-image: url("2.png");
     background-size: cover;
-    animation: rotateImage 0s linear infinite; /* Set duration to 0s for no rotation */
+    animation: rotateImage 0s linear infinite; 
     margin-bottom: 6px;
 }
 .circle img{
@@ -468,8 +468,7 @@ border-radius: 50%;
     transform: translate3d(0px, -29px, 0px);
   }
   
-  /* Begin Right Contact Page */
-  .direct-contact-container {
+
     max-width: 400px;
   }
   
@@ -585,7 +584,6 @@ border-radius: 50%;
     border-color: rgba(255,255,255,.6);
   }
 
-  /* For screen widths up to 1280px */
 @media (max-width: 1280px) {
     header {
       padding: 14px 2%;
@@ -623,7 +621,7 @@ border-radius: 50%;
         margin-bottom: 0px;
       }
       .about{
-        width: 110vh; /* Set the width to match the other divs */
+        width: 110vh; 
         height: 250vh;
         display: flex;
         flex-direction: column;
