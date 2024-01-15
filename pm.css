@@ -527,6 +527,10 @@ border-radius: 50%;
   .social-media-list li a {
     color: #fff;
   }
+.contact-wrapper{
+    margin-left: 40pc;
+
+   }
   
   .social-media-list li {
     position: relative; 
