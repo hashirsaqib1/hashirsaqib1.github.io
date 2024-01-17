@@ -16,6 +16,11 @@ text-decoration: none;
 list-style: none;
 
 }
+body{
+  h1, h2, h3, h4, h5, h6{
+    color: white;
+  }
+}
 
 :root{
 
@@ -212,7 +217,7 @@ margin-top: 20px;
     border-radius: 50%;
     background-image: url("2.png");
     background-size: cover;
-    animation: rotateImage 0s linear infinite; /* Set duration to 0s for no rotation */
+    animation: rotateImage 0s linear infinite; 
     margin-bottom: 6px;
 }
 .circle img{
@@ -402,6 +407,31 @@ border-radius: 50%;
     position: relative;
     bottom: 7pc;
 }
+#contact {
+  width: 100%;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh; 
+}
+
+.section-header {
+  margin: 20px auto; 
+  font: 300 40px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+  .contact-wrapper {
+    max-width: 800px; 
+    padding-left: 20px; 
+    margin-right: 40pc;
+  }
+
 
 #contact {
     width: 100%;
@@ -428,15 +458,13 @@ border-radius: 50%;
     max-width: 840px;
   }
   
-  /* Left contact page */
   .form-horizontal {
-    /*float: left;*/
     max-width: 400px;
     font-family: 'Lato';
     font-weight: 400;
   }
   
-  .form-control, 
+  .message-box, 
   textarea {
     max-width: 400px;
     background-color: #000;
@@ -467,15 +495,14 @@ border-radius: 50%;
   
   .alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
-  }
-  
-  /* Begin Right Contact Page */
-  .direct-contact-container {
     max-width: 400px;
+
   }
   
-  /* Location, Phone, Email Section */
-  .contact-list {
+
+  
+  
+  .ctext {
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
@@ -517,7 +544,7 @@ border-radius: 50%;
   
   
   /* Social Media Icons */
-  .social-media-list {
+  .contact-socials {
     position: relative;
     font-size: 22px;
     text-align: center;
@@ -526,11 +553,15 @@ border-radius: 50%;
     padding: 0;
   }
   
-  .social-media-list li a {
+  .contact-socials li a {
     color: #fff;
   }
+.contact-wrapper{
+    margin-left: 40pc;
+
+   }
   
-  .social-media-list li {
+  .contact-socials li {
     position: relative; 
     display: inline-block;
     height: 60px;
@@ -544,7 +575,7 @@ border-radius: 50%;
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:after {
+  .contact-socials li:after {
     content: '';
     position: absolute;
     top: 0;
@@ -558,17 +589,17 @@ border-radius: 50%;
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:hover {
+  .contact-socials li:hover {
     background-color: #fff; 
   }
   
-  .social-media-list li:hover:after {
+  .contact-socials li:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .contact-socials li:hover a {
     color: #000;
   }
   
@@ -578,12 +609,107 @@ border-radius: 50%;
     letter-spacing: 1px;
     text-align: center;
   }
+  p{
+    margin-right: 3pc;
+  }
   
   hr {
     border-color: rgba(255,255,255,.6);
   }
+  .contact {
+    padding: 130px 0;
+    margin-left: 4pc;
+  }
+  
+  .contact .heading h2 {
+    font-size: 35px;
+    font-weight: 700;
+  
+  margin-left: 30pc;
+    padding: 0;
+  
+  }
+  
+  .contact .heading h2 span {
+    color: #ff9100;
+  }
+  .contact .heading h2{
+    color: #f9f9f9;
+    margin-right: 50pc;
+  }
+  
+  
+  
+  .contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  .contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ff9100;
+    color: #ffffff;
+  }
+  
+  .contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 60pc;
+  }
+  
+  .contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0 0 40px;
+    margin-right: 50pc;
 
-  /* For screen widths up to 1280px */
+  }
+  
+  .contact .content .info {
+    margin-top: 30px;
+  }
+  .contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+  }
+  .contact .content .info h4 {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .contact .content .info h4 span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  form{
+    margin-left: 5pc;
+    position: relative;
+    bottom: 20pc;
+  }
+  .contact{
+    margin-right: 40pc;
+  }
+  .content{
+    margin-right: 50pc;
+  }
+  footer{
+    width: 200vh;
+  }
+
 @media (max-width: 1280px) {
     header {
       padding: 14px 2%;
@@ -593,6 +719,9 @@ border-radius: 50%;
     .navbar a {
       padding: 5px 0;
       margin: 0px 20px;
+    }
+    body{
+      width: 220vh;
     }
   }
   
@@ -605,15 +734,47 @@ border-radius: 50%;
     .navbar {
         width: 270px;
         height: auto;
+        text-size-adjust: large;
+      }
+      h1{
+        font-size: 200px;
+      }
+      h2{
+        font-size: 100px;
+        margin-top: 50px;
+        position: relative; bottom: 2px;
+      }
+      
+      .logo{
+        font-size: 60px;
+      }
+      
+     
+      .main{
+        font-size: 60px;
+      }
+      
+      .main a{
+        font-size: 60px;
+      }
+      .main i{
+        font-size: 60px;
+      }
+      li{
+        font-size: 60px;
       }
     
       .landing {
-        width: 160vh; /* Set the width to match the other divs */
+        width: 120vh; 
+
         height: 250vh;
       }
     
       #menu-icon {
         display: block;
+      }
+      .main a{
+        font-size: 60px;
       }
     
       body {
@@ -621,13 +782,14 @@ border-radius: 50%;
         margin-bottom: 0px;
       }
       .about{
-        width: 110vh; /* Set the width to match the other divs */
+        width: 150vh; 
         height: 250vh;
         display: flex;
         flex-direction: column;
         height: 250vh;
       
       }
+      
       .btn1{
         width: 200px;
       }
@@ -636,15 +798,17 @@ border-radius: 50%;
         font-size: 60px;
       }
       .btn1 img {
-        width: 400px; /* Change this value as per your requirement */
+        width: 400px; 
       }
-      .form-control{
-        margin-left: 90vh;
-      }
+      
+      
+      
+      
+
       .Info, .Info2{
         display: flex;
         flex-direction: column;       
-        width: 110vh;
+        width: 140vh;
         height: 250vh;
         margin: 0%;
 
@@ -679,29 +843,12 @@ border-radius: 50%;
         width: 90vh;
         
       }
-      .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 20pc;
-        position: relative; bottom: 40pc;
-        width: 100%; /* Adjust as needed */
-        height: 150vh; 
-        font-size: 1.3rem; /* Adjust as needed */
-
-      }
-    
-      .form-group {
-        margin-bottom: 20px; /* Adjust as needed */
-      }
       
-     
       
       .circle, .text{
         margin-top: 30pc;
       }
+      
      
       
       .navbar {
@@ -724,7 +871,7 @@ border-radius: 50%;
         margin: 12px 0;
         padding: 0px 25px;
         transition: all .50s ease;
-        font-size: 1.3rem; /* Adjust as needed */
+        font-size: 1.3rem; 
 
       }
     
@@ -742,20 +889,41 @@ border-radius: 50%;
       }
     
       .landing {
-        width: 120vh;
+        width: 220vh;
       }
+      
   }
   
-  /* For screen widths up to 569px */
   @media screen and (max-width: 569px) {
-    .contact{
-      margin-top: 40pc;
-      width: 110vh;
-      font-size: 70pc;
+   
+    
+    .logo{
+      font-size: 60px;
+    }
+    
+    .main{
+      font-size: 60px;
+    }
+    
+    .main a{
+      font-size: 60px;
+    }
+    .main i{
+      font-size: 60px;
+    }
+    li{
+      font-size: 60px;
+    }
+
+    .navbar{
+      text-size-adjust: large;
 
     }
+    .navbar a {
+      font-size: 70px; 
+    }
     .landing{
-      width: 160vh;
+      width: 210vh;
     }
     .about{
       width: 160vh;
@@ -788,56 +956,40 @@ border-radius: 50%;
     }
 
 
-    .direct-contact-container,
-    .form-socials {
-      float: none;
-      margin: 0 auto;
-    }
-  
-    .form-control,
-    textarea {
-      margin: 0 auto;
-    }
-  
-    .name,
-    .email,
-    textarea {
-      width: 280px;
-    }
-  
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-    }
-  
-    .social-media-list {
-      left: 0;
-    }
-  
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-  
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
+   
   }
-  @media (max-width: 880px){
+  
+@media (max-width: 380px){
+    
+    .Info,.Info2{
+      height: 300vh;
+      width: 110vh;
+    }
+
+    .landing, .about{
+      width: 180vh;
+      height: 300vh;
+    }
+    
+  
+}
+  @media (max-width: 330px){
+    
     .Info,.Info2{
       height: 600vh;
       width: 110vh;
     }
+
     .landing, .about{
       width: 250vh;
       height: 600vh;
     }
+    p{
+      width: 130vh;
+      text-align: left;
+
+    }
   
 }
   
-  /* For screen widths up to 410px */
   
