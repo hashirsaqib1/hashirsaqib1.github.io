@@ -971,6 +971,30 @@ border-radius: 50%;
       height: 300vh;
     }
     
+<<<<<<< HEAD
+=======
+  
+}
+  @media (max-width: 330px){
+    
+    .Info,.Info2{
+      height: 600vh;
+      width: 110vh;
+    }
+
+    .landing, .about{
+      width: 250vh;
+      height: 600vh;
+    }
+    p{
+      width: 130vh;
+      text-align: left;
+
+    }
+  
+}
+  
+>>>>>>> ad05591c915e47789d3710a3b2da1fd02b85a234
   
 }
   @media (max-width: 330px){
