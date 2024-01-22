@@ -709,14 +709,7 @@ border-radius: 50%;
   footer{
     width: 200vh;
   }
-@media (min-width: 1400px){
-  .landing{
-    width: 300vh;
-    height: 200vh;
-  }
 
-
-}
 
 @media (max-width: 1280px) {
     header {
