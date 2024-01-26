@@ -724,6 +724,26 @@ border-radius: 50%;
     body{
       width: 220vh;
     }
+    .about{
+      height: 90vh;
+    }
+    .Info, .Info2{
+      height: 90vh;
+    }
+    .text1 h1{
+      font-size: 80px;
+    }
+    .text1 p{
+      font-size: 40px;
+    }
+    .text2 h1{
+      font-size: 80px;
+    }
+    .text2 p{
+      font-size: 40px;
+    }
+
+
   }
   
   @media  (max-width: 1080px) {
@@ -938,6 +958,7 @@ border-radius: 50%;
     }
     .Info, .Info2{
       width: 110vh;
+      height: 150pc;
 
     }
     .text1, .text2{
